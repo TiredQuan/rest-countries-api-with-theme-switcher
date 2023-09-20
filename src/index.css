@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --dark-Text: hsl(0, 0%, 100%); /* same as light Elements */
+    --dark-Elements: hsl(209, 23%, 22%);
+    --dark-Background: hsl(207, 26%, 17%);
+    --light-Text: hsl(200, 15%, 8%);
+    --light-Input: hsl(0, 0%, 52%);
+    --light-Background: hsl(0, 0%, 98%);
+    --light-Elements: hsl(0, 0%, 100%);
+  }
+}
+
+/* plan for setting up the theme colors, for now this is how it will work
+make tailwind class variables, DO NOT USE NORMAL TAILWIND DARK MODE
+use class variables to swap between light and dark mode
+use :root[data-theme="dark/light"] to control variables
+and use react to change the variables` */
+
 body {
-    font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
