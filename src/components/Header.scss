@@ -1,0 +1,20 @@
+@use "../assets/fonts" as *;
+
+.header {
+  padding: 26px 66px;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    & h1 {
+      font-size: rem(20);
+      font-weight: var(--weight-heavy);
+    }
+    & button {
+      font-size: rem(14);
+      font-weight: var(--weight-mid);
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
